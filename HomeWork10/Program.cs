@@ -2,7 +2,7 @@
 
 namespace HomeWork10
 {
-   
+
     internal class Program
     {
         static void Main(string[] args)
@@ -16,13 +16,9 @@ namespace HomeWork10
             double resultPerimeter = triangle.Perimeter(point1, point2, point3);
             Console.WriteLine($"Triangle perimeter is {resultPerimeter}");
             Console.ReadLine();
-            double resultSquare = triangle.Square(triangle);
+            double resultSquare = triangle.Square(point1, point2, point3);
             Console.WriteLine($"Triangle square is {resultSquare}");
             Console.ReadLine();
-        }
-        public override string ToString()
-        {
-            return ($"{0}, {1}, {2}" point 1, point 2, point 3);
         }
     }
 }

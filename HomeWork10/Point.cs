@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HomeWork10
+﻿namespace HomeWork10
 {
     public class Point
     {
@@ -10,7 +6,7 @@ namespace HomeWork10
         public int Y;
         public Point(int x, int y)
         {
-            this.X = x; 
+            this.X = x;
             this.Y = y;
         }
     }
