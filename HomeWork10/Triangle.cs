@@ -38,5 +38,9 @@ namespace HomeWork10
                                 $"point B (X = {p2.X}, Y = {p2.Y}), " +
                                 $"point C (X = {p3.X}, Y = {p3.Y}) ");
         }
+        public override string ToString()
+        {
+            return $"Segment AB = {Distance(p1, p2)}; \nSegment BC = {Distance(p2, p3)}; \nSegment AC = {Distance(p1, p3)};";
+        }
     }
 }

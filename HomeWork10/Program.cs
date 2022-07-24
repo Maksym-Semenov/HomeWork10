@@ -12,6 +12,7 @@ namespace HomeWork10
             Point point3 = new Point(6, 6);
             Triangle triangle = new Triangle(point1, point2, point3);
             triangle.Print();
+            Console.WriteLine(triangle.ToString());
             Console.ReadLine();
             double resultPerimeter = triangle.Perimeter(point1, point2, point3);
             Console.WriteLine($"Triangle perimeter is {resultPerimeter}");
