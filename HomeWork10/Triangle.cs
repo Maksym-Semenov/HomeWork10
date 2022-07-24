@@ -24,15 +24,12 @@ namespace HomeWork10
             double perimeter;
             return perimeter = AB + BC + AC;
         }
-        public double Square(Point a, Point b, Point c)
+        public double Square(Triangle t)
         {
-            double AB = Distance(a, b);
-            double BC = Distance(b, c);
-            double AC = Distance(a, c);
-            double halfPerimeter;
-            halfPerimeter = (AB + BC + AC) / 2;
+            double temp = t.Perimeter(p1, p2, p3);
+            double halfPerimeter = temp / 2;
             double square;
-            return square = Math.Sqrt(halfPerimeter / 2 * (halfPerimeter - AB) * (halfPerimeter - BC) * (halfPerimeter - AC));
+            return square = Math.Sqrt(halfPerimeter / 2 * (halfPerimeter - Distance(p1,p2)) * (halfPerimeter - Distance(p2, p3)) * (halfPerimeter - Distance(p1, p3)));
         }
         public void Print()
         {

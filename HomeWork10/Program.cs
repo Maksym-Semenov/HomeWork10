@@ -16,7 +16,7 @@ namespace HomeWork10
             double resultPerimeter = triangle.Perimeter(point1, point2, point3);
             Console.WriteLine($"Triangle perimeter is {resultPerimeter}");
             Console.ReadLine();
-            double resultSquare = triangle.Square(point1, point2, point3);
+            double resultSquare = triangle.Square(triangle);
             Console.WriteLine($"Triangle square is {resultSquare}");
             Console.ReadLine();
         }
